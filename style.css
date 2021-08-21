@@ -60,6 +60,12 @@ p{
   
 }
 
+@media (max-width: 519px){
+  header img{
+    width: 50%;
+  }
+}
+
 #container01 {
   position: relative;
   background: url(image/header_flowe_01.jpg);
@@ -67,16 +73,41 @@ p{
 
 }
 
+@media (max-width: 519px){
+  #container01{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+
+
 #container01 p{
   margin-left: 14%;
   font-size: 20px;
   color: #0054a7;
 }
 
+@media (max-width: 519px){
+  #container01 p{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 #top-nav{ 
   display: flex;
   justify-content: flex-end;
   margin-right: 10%;
+ }
+
+ @media (max-width: 519px){
+  #top-nav{
+    justify-content: center;
+    margin-right: 0;
+  }
  }
 
  #top-nav li {
@@ -113,39 +144,103 @@ p{
    margin-top: 30px;
  }
 
+ @media (max-width: 519px){
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 519px){
+  h1 img{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
  h2 {
    font-size: 40px;
    padding-top: 40px;
    padding-bottom: 30px;
    line-height: 45px;
    font-family: 'Hina Mincho', serif;
-   font-family: 'Kaisei HarunoUmi', serif;
-   
+   font-family: 'Kaisei HarunoUmi', serif; 
  }
+
+ @media (max-width: 519px){
+  h2{
+    font-size: 30px;
+  }
+}
 
  h3{
    font-size: 30px;
-   
    font-family: 'Hina Mincho', serif;
  }
+
+ @media (max-width: 519px){
+  h3{
+    font-size: 25px;
+    line-height:35px;
+    padding-bottom: 15px;
+  }
+}
 
  h4{
    font-size: 20px;
  }
+ 
+ @media (max-width: 519px){
+  h4{
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+} 
+
+ @media (max-width: 519px){
+  .br::before {
+    content: "\A" ;
+    white-space: pre ;
+  }
+}
 
 #shop01{
   width: 80%;
   margin:0 auto;
 }
 
+@media (max-width: 959px){
+  #shop01 img{
+     
+
+  }
+}
+@media (max-width: 519px){
+  #shop01 img{
+      width: 80%;
+      margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 519px){
+  #shop01 p{
+      padding-bottom: 25px;
+  }
+}
+
  .item01{
   align-self: center;
  }
+
 
  .product01{
    display: flex;
    justify-content: space-around;
    padding-top: 60px;
+ }
+ @media (max-width: 519px){
+  .product01{
+    display: block;
+    padding-top: 30px;
+  }
  }
 
  .product02{
@@ -155,11 +250,25 @@ p{
   padding-top: 60px;
 }
 
+@media (max-width: 519px){
+  .product02{
+    display: block;
+    padding-top: 30px;
+  }
+ }
+
 .product03{
   display: flex;
   justify-content: space-around;
   padding-top: 60px;
 }
+
+@media (max-width: 519px){
+  .product03{
+    display: block;
+    padding-top: 30px;
+  }
+ }
 
 .line01 {
   height: 12px;
@@ -169,6 +278,11 @@ p{
   width: 55%;
   margin-left: 5%;
 }
+@media (max-width: 519px){
+  .line01{
+    display: none;
+  }
+ }
 
 .line02 {
   height: 12px;
@@ -179,6 +293,12 @@ p{
   margin-right: 5%;
 }
 
+@media (max-width: 519px){
+  .line02{
+    display: none;
+  }
+ }
+
 .address01{
   text-align: left;
 	display: inline-block;
@@ -186,11 +306,39 @@ p{
   align-self: center;
   font-size: 20px;
 }
+
+@media (max-width: 519px){
+  .address01{
+    font-size: 17px;
+  }
+ }
+
+
 .access01 {
   display: flex;
   justify-content: center;
   padding-bottom: 60px;
 }
+
+@media (max-width: 519px){
+  .access01{
+    display: block;
+  }
+ }
+
+ @media (max-width: 519px){
+  .access01 p{
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+ }
+
+ @media (max-width: 519px){
+  iframe{
+    width: 65%;
+  }
+ }
+
 
 footer{
   background: url(image/background-footer.png);
@@ -220,10 +368,17 @@ footer{
 footer img{
   width: 40%;
 }
+@media (max-width: 519px){
+  footer img{
+    width: 70%;
+  }
+ }
 
 small{
   color:#fff;
 }
+
+
 /***追従するトップへ戻るボタン***/
 #page-top {
   position: fixed;
@@ -237,3 +392,16 @@ small{
   border-radius: 50%;
   box-shadow: 0 2px 10px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
 }
+
+@media (max-width: 519px){
+  #page-top{
+    bottom: 130px;
+  }
+ }
+
+ @media (max-width: 519px){
+  #page-top img{
+    width: 50%;
+    line-height: 1.2rem;
+  }
+ }
