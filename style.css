@@ -60,6 +60,12 @@ p{
   
 }
 
+@media (max-width: 909px){
+  header img{
+    width: 30%;
+  }
+}
+
 @media (max-width: 519px){
   header img{
     width: 50%;
@@ -72,8 +78,7 @@ p{
   background-size: cover; 
 
 }
-
-@media (max-width: 519px){
+@media (max-width: 1109px){
   #container01{
     background-size: cover;
     background-position: center center;
@@ -89,6 +94,14 @@ p{
   color: #0054a7;
 }
 
+@media (max-width: 909px){
+  #container01 p{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 519px){
   #container01 p{
     margin: 0 auto;
@@ -97,17 +110,30 @@ p{
   }
 }
 
+
 #top-nav{ 
   display: flex;
   justify-content: flex-end;
   margin-right: 10%;
  }
 
- @media (max-width: 519px){
+ @media (max-width: 909px){
   #top-nav{
     justify-content: center;
     margin-right: 0;
+
   }
+ }
+
+ @media (max-width: 519px){
+  #top-nav{
+    display: none;
+
+  }
+ }
+
+ .overlay li{
+   margin-top: 24px;
  }
 
  #top-nav li {
@@ -144,12 +170,12 @@ p{
    margin-top: 30px;
  }
 
- @media (max-width: 519px){
+ @media (max-width: 909px){
   h1 {
     text-align: center;
   }
 }
-@media (max-width: 519px){
+@media (max-width: 909px){
   h1 img{
     margin-left: 0;
     margin-bottom: 20px;
@@ -188,10 +214,16 @@ p{
    font-size: 20px;
  }
  
+ @media (max-width: 789px){
+   h4{
+    padding-bottom: 15px;
+  }
+}
+
+
  @media (max-width: 519px){
   h4{
     font-size: 15px;
-    padding-bottom: 15px;
   }
 } 
 
@@ -207,20 +239,19 @@ p{
   margin:0 auto;
 }
 
-@media (max-width: 959px){
+@media (max-width: 1109px){
   #shop01 img{
-     
-
+    width: 25%;
   }
 }
-@media (max-width: 519px){
+@media (max-width: 789px){
   #shop01 img{
       width: 80%;
       margin-bottom: 25px;
   }
 }
 
-@media (max-width: 519px){
+@media (max-width: 789px){
   #shop01 p{
       padding-bottom: 25px;
   }
@@ -236,7 +267,7 @@ p{
    justify-content: space-around;
    padding-top: 60px;
  }
- @media (max-width: 519px){
+ @media (max-width: 789px){
   .product01{
     display: block;
     padding-top: 30px;
@@ -250,7 +281,7 @@ p{
   padding-top: 60px;
 }
 
-@media (max-width: 519px){
+@media (max-width: 789px){
   .product02{
     display: block;
     padding-top: 30px;
@@ -263,7 +294,7 @@ p{
   padding-top: 60px;
 }
 
-@media (max-width: 519px){
+@media (max-width: 789px){
   .product03{
     display: block;
     padding-top: 30px;
@@ -278,7 +309,16 @@ p{
   width: 55%;
   margin-left: 5%;
 }
-@media (max-width: 519px){
+@media (max-width: 1109px){
+  .line01{
+    width: 65%;
+  }
+ }
+
+
+
+
+@media (max-width: 789px){
   .line01{
     display: none;
   }
@@ -293,7 +333,13 @@ p{
   margin-right: 5%;
 }
 
-@media (max-width: 519px){
+@media (max-width: 1109px){
+  .line02{
+    width: 65%;
+  }
+ }
+
+@media (max-width: 789px){
   .line02{
     display: none;
   }
@@ -320,7 +366,7 @@ p{
   padding-bottom: 60px;
 }
 
-@media (max-width: 519px){
+@media (max-width: 789px){
   .access01{
     display: block;
   }
@@ -333,7 +379,13 @@ p{
   }
  }
 
- @media (max-width: 519px){
+ @media (max-width: 1109px){
+  iframe{
+    width: 40%;
+  }
+ }
+
+ @media (max-width: 789px){
   iframe{
     width: 65%;
   }
@@ -368,6 +420,13 @@ footer{
 footer img{
   width: 40%;
 }
+
+@media (max-width: 909px){
+  footer img{
+    width: 60%;
+  }
+ }
+
 @media (max-width: 519px){
   footer img{
     width: 70%;
@@ -379,7 +438,7 @@ small{
 }
 
 
-/***追従するトップへ戻るボタン***/
+/*追従するトップへ戻るボタン*/
 #page-top {
   position: fixed;
   right: 10px;
@@ -392,6 +451,10 @@ small{
   border-radius: 50%;
   box-shadow: 0 2px 10px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
 }
+#page-top img{
+  width: 50%;
+  line-height: 1.2rem;
+}
 
 @media (max-width: 519px){
   #page-top{
@@ -399,9 +462,42 @@ small{
   }
  }
 
- @media (max-width: 519px){
-  #page-top img{
-    width: 50%;
-    line-height: 1.2rem;
+ /*ハンバーガーメニュー*/
+ .sp-menu{
+  text-align: center;
+}
+
+.sp-menu #open{
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255,255,255,0.95) ;
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;/*下の要素を選択できるようになる*/
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+}
+
+.overlay #close{
+  position: absolute;
+  top: 16px;
+  cursor: pointer;
+}
+
+
+ @media (min-width: 520px){
+  .sp-menu{
+    display: none;
   }
- }
