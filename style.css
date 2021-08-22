@@ -472,13 +472,17 @@ small{
   cursor: pointer;
 }
 
+.sp-menu #open.hide {
+  display: none;
+}
+
 .overlay{
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(255,255,255,0.95) ;
+  background: rgba(255, 255, 255, 0.95);
   text-align: center;
   padding: 64px;
   opacity: 0;
@@ -486,12 +490,15 @@ small{
   transition: opacity .6s;
 }
 
+
+
 .overlay.show {
   opacity: 1;
+  pointer-events: auto;/*規定値に戻す→Xが選択できるようになる*/
 }
 
 .overlay #close{
-  position: absolute;
+  position: relative;
   top: 16px;
   cursor: pointer;
 }
@@ -501,3 +508,4 @@ small{
   .sp-menu{
     display: none;
   }
+}

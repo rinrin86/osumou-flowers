@@ -13,7 +13,6 @@
   close.addEventListener('click', () => {
     overlay.classList.remove('show');
     open.classList.remove('hide');
-  });open.classList.add('hide')
+  });
 
 }
-
