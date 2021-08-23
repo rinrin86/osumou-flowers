@@ -77,8 +77,24 @@ p{
   position: relative;
   background: url(image/header_flowe_01.jpg);
   background-size: cover; 
+}
+@media (max-width: 1109px){
+  #container01::before {
+    content: '';
+    background-color: rgba(95 80 80 / 31%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+header ,nav ,header p{
+  position: relative;
 
 }
+
 @media (max-width: 1109px){
   #container01{
     background-size: cover;
@@ -91,8 +107,13 @@ p{
 
 #container01 p{
   margin-left: 14%;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight:bold;
   color: #0054a7;
+  text-shadow:  2px  2px 3px #ffffff59 ,
+               -2px  2px 3px #ffffff59 , 
+                2px -2px 3px #ffffff59 ,
+               -2px -2px 3px #ffffff59 ;
 }
 
 @media (max-width: 909px){
@@ -149,10 +170,10 @@ p{
   font-family: 'Hina Mincho', serif;
   font-family: 'Kaisei HarunoUmi', serif;
   padding: 20px;
-  text-shadow:  2px  2px 10px #0054a7 ,
-               -2px  2px 10px #0054a7 ,
-                2px -2px 10px #0054a7 ,
-               -2px -2px 10px #0054a7;
+  text-shadow:  2px  2px 5px #0054a7 ,
+               -2px  2px 5px #0054a7 ,
+                2px -2px 5px #0054a7 ,
+               -2px -2px 5px #0054a7;
 }
 
 
@@ -178,12 +199,11 @@ p{
   }
   .ac-menu label {
     color:black; 
-    font-size: 30px; 
+    font-size: 25px; 
     line-height: 1.2; 
     text-align: center; 
     font-family: 'Hina Mincho', serif;
-   font-family: 'Kaisei HarunoUmi', serif; 
-    
+    font-family: 'Kaisei HarunoUmi', serif; 
     padding: 20px; /* 内側の余白 */
     cursor: pointer;
     position: relative;
@@ -304,6 +324,7 @@ table{
   }
 }
 
+
 #shop01{
   width: 80%;
   margin:0 auto;
@@ -421,6 +442,8 @@ table{
   padding-right: 3%;
   align-self: center;
   font-size: 20px;
+  font-family: 'Hina Mincho', serif;
+  
 }
 
 
@@ -448,6 +471,7 @@ table{
   th,td {
     font-size: 15px;
     padding:3px 10px;
+    font-family: 'Hina Mincho', serif;
   }
  }
 
