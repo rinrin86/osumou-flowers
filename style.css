@@ -50,6 +50,7 @@ a{
 	color: inherit;
 }
 
+
 *, *:before, *:after{
 	box-sizing: border-box; 
 }	       
@@ -106,7 +107,7 @@ p{
   #container01 p{
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -154,6 +155,8 @@ p{
                -2px -2px 10px #0054a7;
 }
 
+
+
  main{
    text-align: center;
    background: url(image/background-main.png);
@@ -164,6 +167,73 @@ p{
  main img{
   border-radius: 10px;
 }
+
+/*アコーディオンメニュー*/
+@media (max-width: 519px){
+  .ac-menu:last-child {
+    margin-bottom: 0px; /* 最後の要素の下にだけ余白 */
+  }
+  .ac-menu input {
+    display: none;
+  }
+  .ac-menu label {
+    color:black; 
+    font-size: 30px; 
+    line-height: 1.2; 
+    text-align: center; 
+    font-family: 'Hina Mincho', serif;
+   font-family: 'Kaisei HarunoUmi', serif; 
+    
+    padding: 20px; /* 内側の余白 */
+    cursor: pointer;
+    position: relative;
+    display: block;
+  }
+  .ac-menu label:after {
+    position: absolute;
+    right: 20px; /* 左からの距離 */
+    top: 50%; /* 上下中央配置 */
+    -webkit-transform : translateY(-50%);
+    transform : translateY(-50%);
+    content: "＋"; /* アイコン */
+  }
+  .ac-menu input:checked ~ label::after {
+    content: "−"; /* クリック後のアイコン */
+  }
+  .ac-menu div {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s; /* 開閉スピード */
+  }
+  .ac-menu input:checked ~ div {
+    height: auto;
+    opacity: 1;
+    padding: 20px; /* 中身の枠内の余白 */
+  }
+  .ac-menu-inside {
+    color: #333; /* 中身の文字色 */
+    font-size: 17px; /* 中身の文字サイズ */
+    line-height: 2; /* 行間 */
+  }
+
+table{
+    margin: 0 auto;
+    padding-bottom: 10px;
+    }
+  
+    #pc{
+      display: none;
+    }
+  }
+
+  @media (min-width: 520px){
+    #ac{
+      display: none;
+    }
+  }
+/*--------------------------------------------*/
+    
 
  h1 img{
    margin-left: 10%;
@@ -353,11 +423,13 @@ p{
   font-size: 20px;
 }
 
-@media (max-width: 519px){
-  .address01{
-    font-size: 17px;
+
+ @media (max-width: 519px){
+  h2#map{
+    padding-bottom: 0;
   }
  }
+
 
 
 .access01 {
@@ -373,9 +445,9 @@ p{
  }
 
  @media (max-width: 519px){
-  .access01 p{
+  th,td {
     font-size: 15px;
-    padding-bottom: 20px;
+    padding:3px 10px;
   }
  }
 
@@ -391,6 +463,38 @@ p{
   }
  }
 
+ th,td {
+  padding:5px 10px;
+ }
+
+ table tr:nth-child(3) th:nth-child(1) {
+	color: #96001c;
+}
+
+span.marker {
+  background: linear-gradient(transparent 60%,  #ffa500 0 0%);
+  }
+
+  
+
+ @media (min-width: 751px) {
+  a[href*="tel:"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color:black;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    a[href*="tel:"] {
+      text-decoration: underline;
+      color:blue;
+      }
+    }
+    
+  
+ 
 
 footer{
   background: url(image/background-footer.png);
@@ -424,6 +528,7 @@ footer img{
 @media (max-width: 909px){
   footer img{
     width: 60%;
+    padding-bottom: 40px;
   }
  }
 
@@ -458,7 +563,7 @@ small{
 
 @media (max-width: 519px){
   #page-top{
-    bottom: 130px;
+    bottom: 10px;
   }
  }
 
