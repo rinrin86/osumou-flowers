@@ -61,6 +61,18 @@ p{
   
 }
 
+#attention .logotype{
+  text-align: center;
+  font-size: 8px;
+}
+
+#attention a{
+  color:#0054a7;
+  text-decoration:underline;
+}
+
+
+
 @media (max-width: 909px){
   header img{
     width: 30%;
